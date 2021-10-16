@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Structure Lab - Contact</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Structure Lab</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content">
+            <h2>Contact Me</h2>
+            <form method="get" class="form">
+                <div class="form">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email Address: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form">
+                    <label for="reason">Reason for Contact: </label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Choose</option>
+                        <option value="hello">Saying Hello</option>
+                        <option value="contractor">Looking for a Contractor</option>
+                        <option value="interview">Interested in an Interview</option>
+                      </select>
+                </div>
+                <div class="form">
+                    <label for="message">Open Comment: </label><br>
+                    <textarea id="message" name="message" rows="10" cols="30">
+                    </textarea> 
+                </div>
+                <div class="form">
+                  <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy;2021 Red Francis Daniel Encabo. Lab assignment for MI 349 at Michigan State University.</p>
+    </footer>
+</body>
+</html>
