@@ -5,54 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>HTML5 Structure Lab - Contact</title>
+    <title>MI 349 Blog - Contact</title>
 </head>
 <body>
-    <header>
-        <h1>HTML5 Structure Lab</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <h1>MI 349 Blog</h1>
     </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section id="content">
+    <main class="main">
+        <form method="get" class="form">
+        <section>
             <h2>Contact Me</h2>
-            <form method="get" class="form">
-                <div class="form">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" required>
+            <div class="three">
+                <div class="form-col">
+                    <div class="form">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form">
+                        <label for="email">Email Address: </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form">
+                        <label for="tel">Phone Number: </label>
+                        <input type="text" name="tel" id="tel" required>
+                    </div>
                 </div>
-                <div class="form">
-                    <label for="email">Email Address: </label>
-                    <input type="email" name="email" id="email" required>
+                <div class="form-col">
+                    <div class="form">
+                        <label for="reason">Reason for Contact: </label>
+                        <select id="reason" name="reason" required>
+                            <option value="">Choose</option>
+                            <option value="hello">Saying Hello</option>
+                            <option value="contractor">Looking for a Contractor</option>
+                            <option value="interview">Interested in an Interview</option>
+                        </select>
+                        <div class="form">
+                            <label for="site">Website URL: </label>
+                            <input type="text" name="site" id="site" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="form">
-                    <label for="reason">Reason for Contact: </label>
-                    <select id="reason" name="reason" required>
-                        <option value="">Choose</option>
-                        <option value="hello">Saying Hello</option>
-                        <option value="contractor">Looking for a Contractor</option>
-                        <option value="interview">Interested in an Interview</option>
-                      </select>
+                <div class="form-col">
+                    <div class="form">
+                        <label for="message">Open Comment: </label>
+                        <textarea id="message" name="message" rows="10" cols="30">
+                        </textarea> 
+                    </div>
+                    <div class="form">
+                        <input type="submit" value="Submit">
+                    </div>
                 </div>
-                <div class="form">
-                    <label for="message">Open Comment: </label>
-                    <textarea id="message" name="message" rows="10" cols="30">
-                    </textarea> 
-                </div>
-                <div class="form">
-                  <input type="submit" value="Submit">
-                </div>
-            </form>
+            </div>
         </section>
+        </form>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy;2021 Red Francis Daniel Encabo. Lab assignment for MI 349 at Michigan State University.</p>
     </footer>
 </body>

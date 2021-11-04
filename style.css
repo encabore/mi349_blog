@@ -1,13 +1,9 @@
+/* Body */
 html {
     background: #f5f5f7;
 }
 body {
     margin: 40px;
-    padding: 40px;
-    border-top: 10px solid #000;
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
     background: #fff;
     color: #666;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +26,13 @@ h3 {
     font-size: 2em;
     font-weight: 300;
 }
+h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 1.5em;
+    font-weight: 300;
+}
 p {
     font-size: 16px;
     line-height: 1.5em;
@@ -39,13 +42,62 @@ a {
     color: #f2072f;
 
 }
-#content {
+
+/* Header */
+.header {
+    padding: 25px 40px;
+    background: #353535;
+    border-radius: 10px 10px 0px 0px;
+}
+.header h1 {
+    color: #fff;
+}
+
+/* Main Menu */
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #252525;
+    border-top: 3px solid #555;
+    padding: 5px 20px;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    color: #a5a5a5;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}  
+.nav li a:hover,
+.nav .active {
+    color: #fff;
+}
+
+/* Main */
+.main {
+    padding: 25px 40px;
+}
+.two, .three {
+    display: flex;
+}
+.two article:nth-child(1),
+.three article:nth-child(1),
+.three article:nth-child(2) {
+    margin-right: 40px;
 }
 .blog-post {
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
@@ -63,10 +115,14 @@ time {
     padding-top: 20px;
     padding-bottom: 30px;
 }
-footer p {
-    padding-top: 20px;
+
+.footer {
+    background: #fbfbfd;
+    padding: 10px 40px;
+}
+.footer p {
     font-size: 13px;
-    color: #ccc;
+    color: #a5a5a5;
 }
 .form {
     line-height: 2em;
